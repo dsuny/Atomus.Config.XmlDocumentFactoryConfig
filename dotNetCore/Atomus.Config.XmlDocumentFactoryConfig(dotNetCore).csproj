@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Atomus</RootNamespace>
+    <Authors>DSUN</Authors>
+    <Company>Atomus</Company>
+    <Product>Atomus Framework in .Net Core 3.1</Product>
+    <Description>Atomus Framework in .Net Core 3.1</Description>
+    <Copyright>Copyright 2020. DSUN all rights reserved.</Copyright>
+    <PackageId>Atomus.Config.XmlDocumentFactoryConfig</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/dsuny/Atomus.Config.XmlDocumentFactoryConfig</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dsuny/Atomus.Config.XmlDocumentFactoryConfig</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageIcon>atomus.png</PackageIcon>
+    <PackageTags>Atomus Atomus.Core Config XmlDocumentFactoryConfig AtomusFramework</PackageTags>
+    <PackageReleaseNotes>release 1.0.0</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Atomus.Core.dotNetCore" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\image\atomus.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
