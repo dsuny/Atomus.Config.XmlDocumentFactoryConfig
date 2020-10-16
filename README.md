@@ -1,0 +1,2 @@
+# Atomus.Config.XmlDocumentFactoryConfig
+Atomus.Config.XmlDocumentFactoryConfig
