@@ -1,5 +1,4 @@
 ﻿using Atomus.Diagnostics;
-using Atomus.Properties;
 using System;
 using System.Collections.Generic;
 using System.Xml;
@@ -16,9 +15,9 @@ namespace Atomus.Config
             {
                 string value;
 #if DEBUG
-                DiagnosticsTool.MyDebug(string.Format("string IFactoryConfig.ServiceConfigPath = {0}", Settings.Default.ServiceKey));
+                DiagnosticsTool.MyDebug(string.Format("string IFactoryConfig.ServiceConfigPath = {0}", Atomus.Properties.Settings.Default.ServiceKey));
 #endif
-                value = Settings.Default.ServiceKey;
+                value = Atomus.Properties.Settings.Default.ServiceKey;
 
                 return value.IsNullOrEmpty() ? (string)Client.GetAttribute("Settings.Default.ServiceKey") : value;
 

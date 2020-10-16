@@ -5,7 +5,7 @@ using System.Xml;
 
 namespace Atomus.Config
 {
-    public class XmlDocumentFactoryConfigCore : IFactoryConfig
+    public class XmlDocumentFactoryConfig : IFactoryConfig
     {
         XmlDocument IFactoryConfig.XmlDocument { get; set; }
 
@@ -26,7 +26,7 @@ namespace Atomus.Config
             }
         }
 
-        public XmlDocumentFactoryConfigCore()
+        public XmlDocumentFactoryConfig()
         {
 #if DEBUG
             DiagnosticsTool.MyDebug("XmlDocumentFactoryConfig()");
